@@ -6,7 +6,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { Country } from '../models/country.js';
-import { Op } from 'sequelize';
+// import { Op } from 'sequelize';
 import { Model} from 'sequelize'
 import { registerFont } from 'canvas';
 
@@ -19,7 +19,7 @@ interface CountryAttributes {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-registerFont(path.join(__dirname, '../../assets/fonts/openSans.ttf'), {
+registerFont(path.join(__dirname, '../../assets/fonts/OpenSans-Regular.ttf'), {
   family: 'Open Sans',
 });
 
