@@ -19,7 +19,9 @@ interface CountryAttributes {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-registerFont(path.join(__dirname, 'src/assets/fonts/openSans.ttf'), { family: 'Open Sans' });
+registerFont(path.join(__dirname, '../../assets/fonts/openSans.ttf'), {
+  family: 'Open Sans',
+});
 
 
 export const generateSummaryImage = async () => {
